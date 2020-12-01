@@ -94,7 +94,7 @@ def decrypt(c, selfkey):
     return m
 
 
-def RSA_en(pubkey, flag, msg, src_file, des_file):
+def RSA_en(pubkey, flag, msg, src_file):
     # 需要被加密的信息转化成数字，长度小于秘钥n的长度，如果信息长度大于n的长度，那么分段进行加密，分段解密即可。
     if flag == 0:
         fp = open(src_file, "r")
